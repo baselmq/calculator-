@@ -1,0 +1,125 @@
+* {
+  margin-top: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b4664;
+  height: 95vh;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 326px;
+  margin: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 346px;
+  margin-bottom: 20px;
+}
+.calc-text {
+  flex: auto;
+}
+.select-theme {
+  position: relative;
+  top: 10px;
+  background-color: #252c46;
+  border-radius: 20px;
+  width: 45px;
+  height: 17px;
+  margin-left: 18px;
+}
+.select-theme div{
+  position: relative;
+  top: 2.8px;
+  left: 3.5px;
+  background-color: #ce3f2e;
+  border-radius: 20px;
+  width: 12px;
+  height: 12px;
+}
+.select-theme::after{
+  position: absolute;
+  content: "1 2 3";
+  top: -15px;
+  left: 6px;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: normal;
+}
+.calc-text {
+  color: #fff;
+  font-size: 20px;
+}
+.theme-text {
+  position: relative;
+  top: 12px;
+  color: #fff;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+.result {
+  background-color: #191f32;
+  height: 85px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 20px;
+  color: white;
+  font-size: 31px;
+}
+label,
+h6 {
+  font-size: 13px;
+  color: #e9e3dc;
+  position: relative;
+  left: 70px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 65px);
+  grid-template-rows: repeat(5, 45px);
+  background-color: #252d44;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px 15px;
+}
+button {
+  border-radius: 7px;
+  border: none;
+  background-color: #e9e3dc;
+  color: #464b5a;
+  box-shadow: 0 3px #b2a195;
+}
+
+.btn-blue {
+  background-color: #647298;
+  box-shadow: 0 3px #424e75;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.btn-red {
+  background-color: #d13f30;
+  box-shadow: 0 3px #95281c;
+  color: white;
+}
+
+.column-span {
+  grid-column: span 2;
+}
